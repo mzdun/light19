@@ -27,7 +27,7 @@ address: m.zdun@samsung.com
 2. Only a category (color) and start/end indexes, no copies
 3. Fast. As fast as possible. Maybe even faster.
 
-> This seemed to be a big task, but only in terms of code needed to implement key parts of _Lexical conventions_ (`[lex]`) and _Preprocessing directives_ (`[cpp]`) chapters of the standard. (for instance, I didn't really need preprocessor groups for simle highlighting).
+> This seemed to be a big task, but only in terms of code needed to implement key parts of _Lexical conventions_ (`[lex]`) and _Preprocessing directives_ (`[cpp]`) chapters of the standard. (for instance, I didn't really need preprocessor groups for simple highlighting).
 > I would use Boost.Spirit to transpose things like:
 
 ## Random sample rule
@@ -113,7 +113,7 @@ constexpr auto control_line =
 
 > one compiler decided nothing in the file starting with `control_line` is worthy of being `constexpr`, so it declined every declaration from this point onward.
 
-## Sidenote
+## Side note
 Expression-only `control_line` since then:
 - 37 bytes (MS ABI, a hash of some sorts)
 - 2236 bytes (Intel ABI)
