@@ -9,13 +9,13 @@ address: m.zdun@samsung.com
 
 > Probably a voice against type composition and in favor of inheritance, I think...
 >
-> I attempted to create a tokenizer, inspired by Spirit X3, to be able to highlight C++ blocks. By the time I arrived at the ~~topmost type ("preprocessing-file: group(opt)")~~ _control-line_, its name was so long, one compiler was unable to fit it in memory and ~~flat out crashed on that~~ refused to recognize `constexpr` on any later expression.
+> I attempted to create a tokenizer, inspired by Spirit X3, to be able to highlight C++ blocks. By the time I arrived at the <del>topmost type ("preprocessing-file: group(opt)")</del> <ins>_control-line_</ins>, its <ins>type</ins> name was so long, one compiler was unable to fit it in memory and <del>flat out crashed on that</del> <ins>refused to recognize `constexpr` on any later expression</ins>.
 >
 > After breaking the composition with inheritance, the compilers take 10-15 seconds to produce the object file.
 
 # Presentation
 
-> As a side effect of me trying to understand how `gcov` counter from various object files interact, I worked on a tool generating coverage report, in C++, and one of the things I wanted to have was some highlighting of the source code.
+> As a side effect of me trying to understand how `gcov` counters from various object files interact, I worked on a tool generating coverage report, in C++, and one of the things I wanted to have was some highlighting of the source code.
 
 ### slide:
 ![Highlighted C++ code](highlighted.png)
